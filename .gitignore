@@ -1,0 +1,17 @@
+# 1. IGNORAR MODELOS PESADOS
+# Impide que cualquier archivo .pkl de la carpeta models se suba a GitHub
+models/*.pkl
+
+# 2. IGNORAR ENTORNOS VIRTUALES
+# No queremos subir las librerías de Python (ia_env), solo el código
+ia_env/
+env/
+venv/
+
+# 3. IGNORAR ARCHIVOS TEMPORALES DE JUPYTER
+# Estos archivos se crean al ejecutar celdas y ensucian el repositorio
+.ipynb_checkpoints/
+
+# 4. IGNORAR CARPETAS DE DATOS (OPCIONAL)
+# Si tus CSV originales son muy grandes, también puedes ignorarlos
+# data/raw/*.csv
